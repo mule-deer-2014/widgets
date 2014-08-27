@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Widget, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Widget do
+  it "can print its own reversed body" do
+    expect(Widget.new(body: "snuffy").reversed_body).to eq "yffuns"
+  end
 end
