@@ -12,6 +12,10 @@ class WidgetsController < ApplicationController
     end
   end
 
+  def show
+    @widget = Widget.find(params[:id])
+  end
+
   private
 
   def widget_params
